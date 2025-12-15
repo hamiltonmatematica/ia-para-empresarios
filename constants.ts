@@ -2,45 +2,44 @@ import { Plan } from './types';
 
 export const PLANS: Plan[] = [
   {
-    id: 'plano-3',
-    title: 'Plano 3',
-    subtitle: 'Plataforma IA para Empresários',
-    targetAudience: 'Empresários que querem começar a usar IA no dia a dia, entender o que realmente faz sentido e aplicar com autonomia.',
-    colorTheme: 'orange',
-    fixedPrice: {
-      original: 1997,
-      current: 997,
-      note: "Condição especial de lançamento. Nova versão em 01/01/2026."
-    },
+    id: 'plano-1',
+    title: 'Plano 1',
+    subtitle: 'Gestão Estratégica de IA Avançada',
+    targetAudience: 'Para empresas que querem crescimento estruturado, redução de custos e ganho de tempo, com implementação completa de IA, sem precisar aprender ou executar nada.',
+    colorTheme: 'dark',
+    pricing: [
+      { duration: 3, price: 1800 },
+      { duration: 6, price: 1650 },
+      { duration: 12, price: 1500 },
+    ],
     features: [
       {
-        title: "Aprender e Aplicar",
-        description: "Foco em autonomia para o empresário."
+        title: "INCLUI TUDO DO PLANO 2 E 3",
+        description: "Plataforma, Mentorias, Site, Agentes, Treinamentos e Custos inclusos."
       },
       {
-        title: "Plataforma Prática",
-        description: "Acesso a ferramentas e métodos explicados de forma simples: para que serve, quando usar e como aplicar."
+        title: "Implementação Estratégica Completa",
+        description: "Integração completa da IA em diversas áreas da empresa, com foco na automação de processos, análises de dados e aprimoramento de decisões."
       },
       {
-        title: "Guias Passo a Passo",
-        items: [
-          "Criar agentes de IA",
-          "Automatizar tarefas diárias",
-          "Apoio a vendas, marketing e RH",
-          "Análise de dados para decisão"
-        ]
+        title: "Landing Pages & Formulários",
+        description: "Páginas de vendas personalizadas para converter visitantes em leads, com formulários inteligentes que qualificam automaticamente."
       },
       {
-        title: "Mentoria Coletiva Mensal",
-        description: "1 encontro ao vivo baseado nas dores reais dos empresários (com gravação)."
+        title: "Reuniões Estratégicas Mensais",
+        description: "Acompanhamento da liderança para revisar resultados, ajustar rotas e planejar próximos passos."
       },
       {
-        title: "Comunidade Exclusiva",
-        description: "Troca de experiências e networking com outros empresários."
+        title: "Gestão de Tráfego & Aquisição",
+        description: "IA para otimizar campanhas publicitárias, definir público-alvo ideal e ajustar lances automaticamente."
       },
       {
-        title: "Atualizações Constantes",
-        description: "Novas ferramentas e aplicações adicionadas conforme o mercado evolui."
+        title: "Microsistemas Personalizados",
+        description: "Desenvolvimento de plataformas internas e ferramentas sob medida para processos únicos do negócio."
+      },
+      {
+        title: "Suporte Contínuo & Evolução",
+        description: "Sistema evolui constantemente com ajustes trimestrais baseados em dados coletados."
       }
     ]
   },
@@ -48,9 +47,8 @@ export const PLANS: Plan[] = [
     id: 'plano-2',
     title: 'Plano 2',
     subtitle: 'Gestão Operacional de IA',
-    targetAudience: 'Empresas que querem IA funcionando na operação, ganhando tempo e organizando processos. Você foca no negócio, eu cuido da estrutura.',
-    colorTheme: 'light',
-    isPopular: true,
+    targetAudience: 'Para empresas que querem IA funcionando diretamente na operação, ganhando tempo, reduzindo retrabalho e organizando processos, sem precisar entender de tecnologia.',
+    colorTheme: 'orange',
     pricing: [
       { duration: 3, price: 1200 },
       { duration: 6, price: 1100 },
@@ -62,82 +60,62 @@ export const PLANS: Plan[] = [
         description: "Acesso à plataforma, mentoria e comunidade."
       },
       {
-        title: "Operação da Empresa",
-        description: "IA funcionando na rotina do negócio."
+        title: "Site Institucional Completo",
+        description: "Criação e manutenção de site profissional como cartão de visitas digital da empresa."
       },
       {
-        title: "Ecossistema Digital",
-        items: [
-          "Site institucional completo (criação e manutenção)",
-          "Hospedagem de site e plataforma inclusas",
-          "Custos de uso de IA inclusos"
-        ]
+        title: "Plataforma de IA Exclusiva",
+        description: "IAs treinadas com dados internos da empresa. Assistentes para RH, Financeiro e análises estratégicas."
       },
       {
-        title: "IA Personalizada",
-        items: [
-          "Plataforma exclusiva com IAs treinadas na empresa",
-          "Assistentes 24h para RH e Financeiro",
-          "Criação de Agentes Personalizados (Suporte/Decisão)"
-        ]
+        title: "Treinamento Mensal da Equipe",
+        description: "Até 3h de treinamento mensal online com gravações disponíveis para consulta futura."
       },
       {
-        title: "Treinamento de Equipe",
-        items: [
-          "Até 3h de treinamento mensal online",
-          "Sistemas de treinamento automático (Vídeos/Questionários)",
-          "Agentes para tirar dúvidas de colaboradores"
-        ]
+        title: "Agentes de IA Personalizados",
+        description: "Assistentes autônomos para suporte a clientes, qualificação de leads e tomada de decisão."
       },
       {
-        title: "Automações",
-        description: "Redes sociais (comentários/boas-vindas) e WhatsApp (Comunicação interna/Cobrança)."
+        title: "Automação de Redes Sociais",
+        description: "Respostas automáticas em comentários e mensagens de boas-vindas para novos seguidores."
+      },
+      {
+        title: "Implementações Estratégicas",
+        description: "IA aplicada em RH, treinamentos, análises internas e formulários inteligentes para KPIs."
       }
     ]
   },
   {
-    id: 'plano-1',
-    title: 'Plano 1',
-    subtitle: 'Gestão Estratégica Avançada',
-    targetAudience: 'Crescimento estruturado e redução real de custos. Eu atuo como responsável direto pela estratégia e execução de IA dentro da empresa.',
-    colorTheme: 'dark',
-    pricing: [
-      { duration: 3, price: 1800 },
-      { duration: 6, price: 1650 },
-      { duration: 12, price: 1500 },
-    ],
+    id: 'plano-3',
+    title: 'Plano 3',
+    subtitle: 'Plataforma IA para Empresários',
+    targetAudience: 'Para empresários que querem aprender a usar IA na prática e aplicá-la no negócio com autonomia total.',
+    colorTheme: 'light',
+    fixedPrice: {
+      original: 1997,
+      current: 997,
+      note: "Condição especial de lançamento. Acesso disponível a partir de 01/01/2026."
+    },
     features: [
       {
-        title: "INCLUI TUDO DO PLANO 2 E 3",
-        description: "Plataforma, Mentorias, Site, Agentes, Treinamentos e Custos."
+        title: "Plataforma Completa de IA",
+        description: "Acesso a plataforma intuitiva para aprender e aplicar ferramentas de IA que transformam o negócio."
       },
       {
-        title: "Estratégia e Crescimento",
-        description: "IA integrada à estratégia e expansão do negócio."
+        title: "Passo a Passo Prático",
+        description: "Guias que ensinam a criar e aplicar IA: automatizar análises, criar chatbots, qualificar leads e mais."
       },
       {
-        title: "Implementação Estratégica",
-        description: "Planejamento e construção de soluções para RH, Análises Financeiras Profundas e Leitura de Dados."
+        title: "Mentoria Coletiva Mensal",
+        description: "Reuniões mensais com outros empresários para tirar dúvidas e aprender com os desafios de todos."
       },
       {
-        title: "Growth & Dados",
-        items: [
-          "Landing Pages (até 1/mês)",
-          "Formulários inteligentes para Leads",
-          "Dashboards de KPIs"
-        ]
+        title: "Atualizações Constantes",
+        description: "Novas ferramentas e aplicações de IA adicionadas mensalmente conforme o mercado evolui."
       },
       {
-        title: "Gestão de Tráfego",
-        description: "Gestão de anúncios (Meta/Google) com leitura estratégica de dados para aquisição previsível."
-      },
-      {
-        title: "Acompanhamento Liderança",
-        description: "Reunião mensal estratégica com diretoria para análise de resultados e ajustes de rota."
-      },
-      {
-        title: "Sistemas Sob Medida",
-        description: "Desenvolvimento de micro-sistemas e ferramentas específicas para processos únicos do negócio."
+        title: "Comunidade de Empresários",
+        description: "Grupo exclusivo para trocar experiências, discutir ideias e compartilhar boas práticas sobre IA."
       }
     ]
   }
